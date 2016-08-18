@@ -32,13 +32,13 @@
   {
     "remote":      "bb",
     "repository":  "DespairFactor/arm-eabi-4.9",
-    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber"
-     "branch":      "master"
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber",
+    "branch":      "master"
   },
   {
     "remote":      "bb",
     "repository":  "DespairFactor/arm-linux-androideabi-4.9",
-    "target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber"
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber",
     "branch":      "master"
   }
 ]
