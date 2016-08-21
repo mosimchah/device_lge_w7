@@ -1,16 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  
-   <remote  name="bb"
-          fetch="https://bitbucket.org/"/>
-          
-<project path="device/lge/w7" name="mosimchah/device_lge_w7" remote="github" revision="tesla-m" />
-<project path="device/lge/msm8226-common" name="mosimchah/device_lge_msm8226-common" remote="github" revision="mm6.0" />
-<project path="kernel/lge/msm8226" name="GrinningFerret/android_kernel_lge_msm8226" remote="github" revision="mm6.0" />
-<project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" remote="github" revision="cm-13.0" />
-<project path="external/sony/boringssl-compat" name="SlimRoms/android_external_sony_boringssl-compat" remote="github" revision="mm6.0" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" name="DespairFactor/arm-eabi-4.9" remote="bb" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" name="DespairFactor/arm-linux-androideabi-4.9" remote="bb" revision="master" />
+
+  <remote  name="aospb"
+           fetch="https://github.com/AOSPB"
+           revision="mm6.0" />
+
+  <remote  name="bb"
+           fetch="https://bitbucket.org/"/>
+
+   <remote name="orion"
+	  fetch="https://github.com/TeamOrion"
+	  revision="6.0.1" />
+
+<!-- Device Trees to remove -->
+
+  <remove-project path="device/moto/shamu" name="beltz/device_moto_shamu" remote="github" revision="mm" />
+  <remove-project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
+  <remove-project path="vendor/moto" name="camcory/proprietary_vendor_motorola" remote="github" revision="m" />
+
+  <remove-project path="device/lge/hammerhead" name="beltz/device_lge_hammerhead" remote="github" revision="mm" />
+  <remove-project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead,broadcom_pdk,generic_fs" clone-depth="1" />
+  <remove-project path="vendor/lge" name="PureNexusProject-Legacy/proprietary_vendor_lge" remote="github" revision="mm2" />
+
+  <remove-project path="device/huawei/angler" name="beltz/device_huawei_angler" remote="github" revision="mm2" />
+  <remove-project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" clone-depth="1" />
+  <remove-project path="vendor/huawei" name="PureNexusProject-Legacy/proprietary_vendor_huawei" remote="github" revision="mm2" />
+
+  <remove-project path="device/lge/bullhead" name="beltz/device_lge_bullhead" remote="github" revision="mm2" />
+  <remove-project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" clone-depth="1" />
+#
+#
+#
+<!-- L90 Stuff -->
+<project name="mosimchah/device_lge_w7" path="device/lge/w7" remote="github" revision="beltz" />
+<project name="mosimchah/device_lge_msm8226-common" path="device/lge/msm8226-common" remote="github" revision="mm6.0" />
+<project name="GrinningFerret/android_kernel_lge_msm8226" path="kernel/lge/msm8226" remote="github" revision="mm6.0" />
+<project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="cm-13.0" />
+<project name="SlimRoms/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="mm6.0" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-cortex-a7" name="SlimShadys/arm-eabi-4.9-cortex-a7" remote="github" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a7" name="SlimShadys/arm-linux-androideabi-4.9-cortex-a7" remote="github" revision="master" />
+#
+#
+#
+<!-- CAF repos -->
+<project path="vendor/qcom/opensource/display-frameworks" name="vendor_qcom_opensource_display-frameworks" remote="aospb" />
+<project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="aospb" />
+<project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="aospb" />
+
+<!-- CAF from aospb -->
+<project path="hardware/qcom/bt-caf" name="hardware_qcom_bt" remote="aospb" revision="mm6.0-caf" />
+<project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" remote="aospb" revision="mm6.0-caf" />
+<project path="hardware/ril-caf" name="hardware_ril" remote="aospb" revision="mm6.0-caf" />
+
+<!--Snap-->
+  <project path="packages/apps/Snap" name="packages_apps_Snap" remote="orion" revision="6.0.1" />
+
 
 </manifest>
+
 
