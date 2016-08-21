@@ -1,8 +1,5 @@
-# Enhanced NFC
-$(call inherit-product, vendor/aosp/config/nfc_enhanced.mk)
-
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/androidx/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 540
