@@ -30,13 +30,13 @@
     "branch":      "mm6.0"
   },
   {
-    "remote":      "bb",
-    "repository":  "DespairFactor/arm-eabi-4.9",
-    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber"
+    "remote":      "github",
+    "repository":  "SlimShadysr/arm-eabi-4.9-cortex-a7",
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-cortex-a7"
   },
   {
-    "remote":      "bb",
-    "repository":  "DespairFactor/arm-linux-androideabi-4.9",
-    "target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber"
-  }
+    "remote":      "github",
+    "repository":  "SlimShadys/arm-linux-androideabi-4.9-cortex-a7",
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a7"
+}
 ]
