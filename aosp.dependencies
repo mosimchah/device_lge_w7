@@ -9,7 +9,7 @@
     "remote":      "github",
     "repository":  "mosimchah/device_lge_msm8226-common",
     "target_path": "device/lge/msm8226-common",
-    "branch":      "mm6.0"
+    "branch":      "beltz"
   },
   {
     "remote":      "github",
