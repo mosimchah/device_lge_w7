@@ -3,7 +3,7 @@
     "remote":      "github",
     "repository":  "mosimchah/device_lge_w7",
     "target_path": "device/lge/w7",
-    "branch":      "tesla-m"
+    "branch":      "beltz"
   },
   {
     "remote":      "github",
