@@ -39,8 +39,8 @@
     <!-- Wether doze feature is enabled by default in settings. -->
     <bool name="config_dozeAfterScreenOff">true</bool>
 
-    <!-- Bool whether to show Hardware keys settings -->
-    <bool name="config_showHwKeys">true</bool>
+    <!-- Bool whether to show Hardware keys settings 
+    <bool name="config_showHwKeys">true</bool> -->
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
