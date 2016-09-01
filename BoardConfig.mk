@@ -49,6 +49,7 @@ ENABLE_GCCONLY := true
 # Kernel Toolchain
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 TARGET_GCC_VERSION_ARM := uber-4.9
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-uber-4.9/bin
 
 # Rom Toolchain
 TARGET_GCC_VERSION_EXP := 4.9
