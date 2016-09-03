@@ -106,9 +106,9 @@ void vendor_load_properties()
         property_set("persist.radio.multisim.config", "");
         property_set("persist.multisim.config", "");
     } else {
-        /* XXX */
+        /* None of the above matches */
         property_set("ro.product.device", "w7");
-        property_set("ro.product.model", "Please write your model name to agent00791@gmail.com");
+        property_set("ro.product.model", "Unknown model. Please message the maintainer!");
         property_set("persist.radio.multisim.config", "");
         property_set("persist.multisim.config", "");
     }
