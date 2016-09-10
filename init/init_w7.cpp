@@ -69,7 +69,7 @@ void vendor_load_properties()
     char devicename[PROP_VALUE_MAX];
 
     std::string serial = property_get("ro.boot.serialno");
-    if (serial == "LGD410") {
+    if (serial.substr(0,6) == "LGD410") {
         /* D410, D410hn */
         if (check_cmdline("model.name=LG-D410hn") == 1) {
                 property_set("ro.product.device", "w7nds");
@@ -85,7 +85,7 @@ void vendor_load_properties()
         property_set("persist.radio.multisim.config", "dsds");
         property_set("persist.radio.dont_use_dsd", "true");
         property_set("ro.telephony.ril.config", "simactivation");
-    } else if (serial == "LGD405") {
+    } else if (serial.substr(0,6) == "LGD405") {
         /* D405, D405n */
         if (check_cmdline("model.name=LG-D405n") == 1) {
                 property_set("ro.product.model", "LG-D405n");
@@ -99,7 +99,7 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "lge/w7_global_com/w7ds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
         property_set("persist.radio.multisim.config", "");
         property_set("persist.multisim.config", "");
-    } else if (serial == "LGD415") {
+    } else if (serial.substr(0,6) == "LGD415") {
         /* D415 */
         property_set("ro.product.model", "LG-D415");
         property_set("ro.product.device", "w7");
