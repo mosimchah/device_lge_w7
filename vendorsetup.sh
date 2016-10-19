@@ -21,4 +21,5 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo aosp_w7-userdebug
+sh device/lge/w7/prebuilt/patch.sh
 
