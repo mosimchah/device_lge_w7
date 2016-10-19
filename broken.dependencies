@@ -1,0 +1,38 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "mosimchah/device_lge_msm8226-common",
+    "target_path": "device/lge/msm8226-common",
+    "branch":      "broken-n7.0"
+  },
+  {
+    "remote":      "github",
+    "repository":  "GrinningFerret/android_kernel_lge_msm8226",
+    "target_path": "kernel/lge/msm8226",
+    "branch":      "n-test"
+  },
+  {
+    "remote":      "github",
+    "repository":  "mosimchah/proprietary_vendor_lge",
+    "target_path": "vendor/lge",
+    "branch":      "cm-13.0"
+  },
+  {
+    "remote":      "github",
+    "repository":  "SlimRoms/android_external_sony_boringssl-compat",
+    "target_path": "external/sony/boringssl-compat",
+    "branch":      "ng7.0"
+  },
+  {
+    "remote":      "github",
+    "repository":  "SlimShadys/arm-eabi-uber-4.9",
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-uber-4.9",
+    "branch":      "master"
+  },
+  {
+    "remote":      "github",
+    "repository":  "SlimShadys/arm-linux-androideabi-uber-4.9",
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-uber-4.9",
+    "branch":      "master"
+  }
+]
