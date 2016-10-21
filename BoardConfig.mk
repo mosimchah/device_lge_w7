@@ -37,7 +37,12 @@ TARGET_BOOTLOADER_BOARD_NAME := w7
 
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/w7/mkbootimg.mk
+TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := stormysea_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/msm8226
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-uber-4.9/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
+
 
 # Optimizations
 CLANG_O3 := true
@@ -47,8 +52,8 @@ GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-TARGET_GCC_VERSION_ARM := uber-4.9
+#KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+#TARGET_GCC_VERSION_ARM := uber-4.9
 
 # Rom Toolchain
 TARGET_GCC_VERSION_EXP := 4.9
