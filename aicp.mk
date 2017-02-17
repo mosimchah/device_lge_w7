@@ -1,5 +1,7 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/lge/w7/device_w7.mk)
 
@@ -9,8 +11,12 @@ TARGET_SCREEN_HEIGHT := 960
 
 # Release name
 PRODUCT_RELEASE_NAME := LG L90
-PRODUCT_NAME := lineage_w7
+PRODUCT_NAME := aicp_w7
 PRODUCT_MODEL := w7
 PRODUCT_DEVICE := w7
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_BRAND := lge
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Moshe Bararsh (mosimchah)"
